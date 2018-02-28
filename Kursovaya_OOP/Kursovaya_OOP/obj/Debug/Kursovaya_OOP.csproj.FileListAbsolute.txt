@@ -1,0 +1,19 @@
+c:\users\bubus\documents\visual studio 2015\Projects\Kursovaya_OOP\Kursovaya_OOP\bin\Debug\Kursovaya_OOP.exe.config
+c:\users\bubus\documents\visual studio 2015\Projects\Kursovaya_OOP\Kursovaya_OOP\bin\Debug\Kursovaya_OOP.exe
+c:\users\bubus\documents\visual studio 2015\Projects\Kursovaya_OOP\Kursovaya_OOP\bin\Debug\Kursovaya_OOP.pdb
+c:\users\bubus\documents\visual studio 2015\Projects\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.Form1.resources
+c:\users\bubus\documents\visual studio 2015\Projects\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.Properties.Resources.resources
+c:\users\bubus\documents\visual studio 2015\Projects\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.csproj.GenerateResource.Cache
+c:\users\bubus\documents\visual studio 2015\Projects\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.exe
+c:\users\bubus\documents\visual studio 2015\Projects\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.pdb
+C:\Users\bubus\Documents\Visual Studio 2015\Projects\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.csprojResolveAssemblyReference.cache
+C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\bin\Debug\Kursovaya_OOP.exe.config
+C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\bin\Debug\Kursovaya_OOP.exe
+C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\bin\Debug\Kursovaya_OOP.pdb
+C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.csprojResolveAssemblyReference.cache
+C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.Form1.resources
+C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.Properties.Resources.resources
+C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.csproj.GenerateResource.Cache
+C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.csproj.CoreCompileInputs.cache
+C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.exe
+C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.pdb
