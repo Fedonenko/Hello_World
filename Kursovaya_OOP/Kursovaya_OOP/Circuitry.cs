@@ -1,5 +1,4 @@
-﻿//#define C 50 
-//int C = 50;
+﻿//изменения проекта
 using System;
 using System.Collections.Generic;
 using System.Linq;
