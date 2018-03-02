@@ -70,6 +70,7 @@ namespace Kursovaya_OOP
                                 _deltaY = e.Y - F._figure[i][j].Uper_Left_Corner.Y;
                                 _i = i;
                                 _j = j;
+                                Output_Of_Indicators(F._figure[i][j]);
                                 return;
                             }
                             else if (e.Button == MouseButtons.Right)
@@ -106,6 +107,15 @@ namespace Kursovaya_OOP
                 F._figure[_i][_j].Uper_Left_Corner.Y = e.Y - _deltaY;
                 pictureBox1.Invalidate();
             }
+        }
+
+        private void Output_Of_Indicators(Cell tmp)
+        {
+            textCapacitance.Text = tmp.Capacitance.ToString();
+            textAmperage.Text = tmp.Amperage.ToString();
+            textResist.Text = tmp.Resist.ToString();
+            textVoltage.Text = tmp.Volrae.ToString();
+
         }
 
     }

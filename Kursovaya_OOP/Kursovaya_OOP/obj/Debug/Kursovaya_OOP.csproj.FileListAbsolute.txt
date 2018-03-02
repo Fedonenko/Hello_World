@@ -17,3 +17,13 @@ C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.cspro
 C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.csproj.CoreCompileInputs.cache
 C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.exe
 C:\Users\bubus\Desktop\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.pdb
+E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\bin\Debug\Kursovaya_OOP.exe.config
+E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\bin\Debug\Kursovaya_OOP.exe
+E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\bin\Debug\Kursovaya_OOP.pdb
+E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.csprojResolveAssemblyReference.cache
+E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.Form1.resources
+E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.Properties.Resources.resources
+E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.csproj.GenerateResource.Cache
+E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.csproj.CoreCompileInputs.cache
+E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.exe
+E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.pdb

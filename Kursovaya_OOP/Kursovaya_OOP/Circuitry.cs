@@ -16,15 +16,34 @@ namespace Kursovaya_OOP
         public Coord XY0;//цент фигуры
         public Coord Uper_Left_Corner;//левый верхний угол
         public int Fi = 0;//угол поворота
-        public double Width = 0;
-        public double Height = 0;
+        public double
+            Width = 0,
+            Height = 0,
+            Resist = 0,
+            Voltage = 0,
+            Amperage = 0,
+            Capacitance = 0;
+
+
         public Cell()
         {
             XY0 = new Coord();
             Uper_Left_Corner = new Coord();
         }
+        public Cell(Cell tmp)
+        {
+            this.Amperage = tmp.Amperage;
+            this.Capacitance = tmp.Capacitance;
+            this.Fi = tmp.Fi;
+            this.Height = tmp.Height;
+            this.Resist = tmp.Resist;
+            this.Uper_Left_Corner = new Coord(tmp.Uper_Left_Corner);
+            this.Voltage = tmp.Voltage;
+            this.Width = tmp.Width;
+            this.XY0 = new Coord(tmp.XY0);
+        }
     }
-    class Coord
+    internal class Coord
     {
         public double X { get; set; }
         public double Y { get; set; }
@@ -32,6 +51,11 @@ namespace Kursovaya_OOP
         {
             X = valX;
             Y = valY;
+        }
+        public Coord(Coord tmp)
+        {
+            this.X = tmp.X;
+            this.Y = tmp.Y;
         }
         public static bool operator ==(Coord val1, Coord val2)
         {
@@ -42,6 +66,7 @@ namespace Kursovaya_OOP
         {
             return (val1.X != val2.X || val1.Y != val2.Y) ? true : false;
         }
+        //public static Coord operator =(Coord val1) => new Coord(val1);
 
     }
     class Circuitry
@@ -62,12 +87,22 @@ namespace Kursovaya_OOP
         public Data [] _figure;
         Color _color;
         public Pen _pen;
+        public delegate void Paint_Component(PaintEventArgs pa, double[]pX, double[]pY);
+        public Paint_Component[] _arrComponent;
 
         public Circuitry()
         {
-            int nFigure = 6;
-            _point_X = new double[nFigure][];
-            _point_Y = new double[nFigure][];
+            _arrComponent = new Paint_Component[]
+            {
+                Resistor,
+                Capacitor,
+                Diod,
+                Battary,
+                Gnd,
+                Connection
+            };
+            _point_X = new double[_arrComponent.Length][];
+            _point_Y = new double[_arrComponent.Length][];
             //resistor
             _point_X[0] = new double[] { 0, 10, 10, 35, 35, 45, 35, 35, 10, 10 };
             _point_Y[0] = new double[] { 5, 5, 0, 0, 5, 5, 5, 10, 10, 5 };
@@ -88,7 +123,7 @@ namespace Kursovaya_OOP
             _point_Y[CONNECTION] = new double[] { 10, 10, 0,20};
 
 
-            _figure = new Data[nFigure];
+            _figure = new Data[_arrComponent.Length];
             _width = 2;
             _color = Color.Black;
             _pen = new Pen(_color, _width);
@@ -122,43 +157,7 @@ namespace Kursovaya_OOP
                 pointX[i] += tmp.Uper_Left_Corner.X;
                 pointY[i] += tmp.Uper_Left_Corner.Y;
             }
-            switch(name)
-            {
-                case RESISTOR:
-                    {
-                        Resistor(pa, pointX, pointY);
-                        break;
-                    }
-                case CAPACITOR:
-                    {
-                        Capacitor(pa, pointX, pointY);
-                        break;
-                    }
-                case DIOD:
-                    {
-                        Diod(pa, pointX, pointY);
-                        break;
-                    }
-                case BATTARY:
-                    {
-                        Battary(pa, pointX, pointY);
-                        break;
-                    }
-                case GND:
-                    {
-                        Gnd(pa, pointX, pointY);
-                        break;
-                    }
-                case CONNECTION:
-                    {
-                        Connection(pa, pointX, pointY);
-                        break;
-                    }
-                default:
-                    {
-                        break;
-                    }
-            }
+            _arrComponent[name](pa, pointX, pointY);
         }
         //отрисовка фигур по введённым точкам
         private void Resistor(PaintEventArgs pa, double []pX, double []pY)
@@ -242,7 +241,18 @@ namespace Kursovaya_OOP
             }
             pa.Graphics.DrawLines(_pen, arrP);
         }
+        //
+        private Cell DefaultResistor()
+        {
+            Cell tmp = new Cell
+            {
+                Amperage = 0.25,
+                Resist = 100000,
+                Voltage = 12
+            };
 
+            return new Cell(tmp);
+        }
         //
         public void Resistor(PictureBox pb)
         {
