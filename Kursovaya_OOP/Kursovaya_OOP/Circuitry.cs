@@ -129,9 +129,9 @@ namespace Kursovaya_OOP
             _pen = new Pen(_color, _width);
         }
         //создаёт новый элемент name в указаной точке с углом наклона fi
-        public void NewElement(int name, double x0, double y0, int fi)
+        public void NewElement(int name, double x0, double y0, int fi, Cell tmp)
         {
-            var tmp = new Cell();
+            //var tmp = new Cell();
             var pointX = new double[_point_X[name].Length];
             var pointY = new double[_point_Y[name].Length];
             Turn(_point_X[name], _point_Y[name],
@@ -256,34 +256,39 @@ namespace Kursovaya_OOP
         //
         public void Resistor(PictureBox pb)
         {
-            NewElement(RESISTOR, _begin_X, _begin_Y, 0);
+            NewElement(RESISTOR, _begin_X, _begin_Y, 0, 
+                new Cell {Amperage = 0.25, Voltage = 12, Resist = 100});
             pb.Invalidate();
         }
         public void Capacitor(PictureBox pb)
         {
-            NewElement(CAPACITOR, _begin_X, _begin_Y, 0);
+            NewElement(CAPACITOR, _begin_X, _begin_Y, 0,
+                new Cell { Capacitance = 100, Voltage = 50});
             pb.Invalidate();
         }
         public void Diod(PictureBox pb)
         {
-            NewElement(DIOD, _begin_X, _begin_Y, 0);
+            NewElement(DIOD, _begin_X, _begin_Y, 0,
+                new Cell { Resist = 2, Voltage = 100});
             pb.Invalidate();
         }
         public void Battary(PictureBox pb)
         {
-            NewElement(BATTARY, _begin_X, _begin_Y, 0);
+            NewElement(BATTARY, _begin_X, _begin_Y, 0,
+                new Cell { Voltage = 12, Amperage = 10});
             pb.Invalidate();
         }
         public void Gnd(PictureBox pb)
         {
-            NewElement(GND, _begin_X, _begin_Y, 0);
+            NewElement(GND, _begin_X, _begin_Y, 0, new Cell());
             pb.Invalidate();
         }
         public void Connection(PictureBox pb)
         {
-            NewElement(CONNECTION, _begin_X, _begin_Y, 0);
+            NewElement(CONNECTION, _begin_X, _begin_Y, 0, new Cell());
             pb.Invalidate();
         }
+        
 
         //поворот координат точек массивов1 в массивы2 вокруг точки х0 у0 на угол фи
         public void Turn(double[] arrX1, double[] arrY1,
@@ -323,5 +328,7 @@ namespace Kursovaya_OOP
                     }
             }
         }
+
+        public ContextMenuStrip ContextMenuStripCircuitry;
     }
 }
