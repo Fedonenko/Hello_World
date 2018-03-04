@@ -76,7 +76,16 @@ namespace Kursovaya_OOP
                             else if (e.Button == MouseButtons.Right)
                             {
                                 F._figure[i][j].Fi += 90;
+                                textBoxTesting.Clear();
+                                F.ContextMenuStripCircuitry = ContextMenuStripPictureBox;
+                                //Cetext_Menu(pictureBox1, ContextMenuStripPictureBox);
+
+                                //textBoxTesting.Text = pictureBox1.ContextMenuStrip.ToString();
+
+                                //ContextMenuStripPictureBox
+                                //pictureBox1.ContextMenuStrip = ContextMenuStripPictureBox;
                                 pictureBox1.Invalidate();
+
                             }
                             else return;
                 }
@@ -99,6 +108,16 @@ namespace Kursovaya_OOP
             _IsClicked = false;
         }
 
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            textAmperage.Clear();
+            textCapacitance.Clear();
+            textResist.Clear();
+            textVoltage.Clear();
+
+        }
+
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
             if (_IsClicked)
@@ -114,8 +133,14 @@ namespace Kursovaya_OOP
             textCapacitance.Text = tmp.Capacitance.ToString();
             textAmperage.Text = tmp.Amperage.ToString();
             textResist.Text = tmp.Resist.ToString();
-            textVoltage.Text = tmp.Volrae.ToString();
+            textVoltage.Text = tmp.Voltage.ToString();
 
+        }
+        private void Contextext_Menu(PictureBox pb, ContextMenuStrip cms)
+        {
+            PictureBox val = pb;
+            ContextMenuStrip val2 = cms;
+            val.ContextMenuStrip = cms;
         }
 
     }

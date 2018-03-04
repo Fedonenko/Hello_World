@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Resistor = new System.Windows.Forms.Button();
@@ -44,7 +45,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.ContextMenuStripPictureBox = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.удалитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBoxTesting = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ContextMenuStripPictureBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -195,11 +201,40 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "Capacitance";
             // 
+            // ContextMenuStripPictureBox
+            // 
+            this.ContextMenuStripPictureBox.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.удалитьToolStripMenuItem});
+            this.ContextMenuStripPictureBox.Name = "ContextMenuStripPictureBox";
+            this.ContextMenuStripPictureBox.Size = new System.Drawing.Size(134, 48);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
+            this.toolStripMenuItem1.Text = "Повернуть";
+            // 
+            // удалитьToolStripMenuItem
+            // 
+            this.удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
+            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.удалитьToolStripMenuItem.Text = "Удалить";
+            // 
+            // textBoxTesting
+            // 
+            this.textBoxTesting.Location = new System.Drawing.Point(132, 4);
+            this.textBoxTesting.Multiline = true;
+            this.textBoxTesting.Name = "textBoxTesting";
+            this.textBoxTesting.Size = new System.Drawing.Size(262, 31);
+            this.textBoxTesting.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 409);
+            this.Controls.Add(this.textBoxTesting);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -218,7 +253,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Цепи";
+            this.Click += new System.EventHandler(this.Form1_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ContextMenuStripPictureBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,6 +278,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ContextMenuStrip ContextMenuStripPictureBox;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem удалитьToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBoxTesting;
     }
 }
 
