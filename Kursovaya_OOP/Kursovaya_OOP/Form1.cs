@@ -56,6 +56,8 @@ namespace Kursovaya_OOP
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
+            if (pictureBox1.ContextMenuStrip != null)
+                pictureBox1.ContextMenuStrip = null;
             for (int i = 0; i < F._figure.Length; i++)
             {
                 if (F._figure[i] == null) continue;
@@ -75,17 +77,17 @@ namespace Kursovaya_OOP
                             }
                             else if (e.Button == MouseButtons.Right)
                             {
-                                F._figure[i][j].Fi += 90;
-                                textBoxTesting.Clear();
-                                F.ContextMenuStripCircuitry = ContextMenuStripPictureBox;
-                                //Cetext_Menu(pictureBox1, ContextMenuStripPictureBox);
+                                _i = i;
+                                _j = j;
+                                //F.ContextMenuStripCircuitry = ContextMenuStripPictureBox;
+                                //Context_Menu(pictureBox1, ContextMenuStripPictureBox);
 
                                 //textBoxTesting.Text = pictureBox1.ContextMenuStrip.ToString();
 
                                 //ContextMenuStripPictureBox
-                                //pictureBox1.ContextMenuStrip = ContextMenuStripPictureBox;
-                                pictureBox1.Invalidate();
-
+                                pictureBox1.ContextMenuStrip = ContextMenuStripPictureBox;
+                                //pictureBox1.Invalidate();
+                                //pictureBox1.ContextMenuStrip = null;
                             }
                             else return;
                 }
@@ -136,11 +138,31 @@ namespace Kursovaya_OOP
             textVoltage.Text = tmp.Voltage.ToString();
 
         }
-        private void Contextext_Menu(PictureBox pb, ContextMenuStrip cms)
+        private void Turn_Figure_Click(object sender, EventArgs e)
         {
-            PictureBox val = pb;
-            ContextMenuStrip val2 = cms;
-            val.ContextMenuStrip = cms;
+            //if(F._figure)
+            F._figure[_i][_j].Fi += 90;
+            pictureBox1.Invalidate();
+            //pictureBox1.p = null;
+
+        }
+
+        private void Change_button_Click(object sender, EventArgs e)
+        {
+            if (F._figure[_i] == null || F._figure[_i][_j] == null) return;
+
+        }
+
+        private void Del_Figure(object sender, EventArgs e)
+        {
+            F._figure[_i].Remove(F._figure[_i][_j]);
+            pictureBox1.Invalidate();
+            pictureBox1.ContextMenuStrip = null;
+        }
+        private void Context_Menu(PictureBox pb, ContextMenuStrip cms)
+        {
+            pb.ContextMenuStrip = cms;
+            //pb.ContextMenuStrip.
         }
 
     }

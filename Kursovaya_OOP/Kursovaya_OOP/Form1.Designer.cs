@@ -48,7 +48,7 @@
             this.ContextMenuStripPictureBox = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.удалитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBoxTesting = new System.Windows.Forms.TextBox();
+            this.Change_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ContextMenuStripPictureBox.SuspendLayout();
             this.SuspendLayout();
@@ -214,27 +214,31 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
             this.toolStripMenuItem1.Text = "Повернуть";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.Turn_Figure_Click);
             // 
             // удалитьToolStripMenuItem
             // 
             this.удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
             this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.удалитьToolStripMenuItem.Text = "Удалить";
+            this.удалитьToolStripMenuItem.Click += new System.EventHandler(this.Del_Figure);
             // 
-            // textBoxTesting
+            // Change_button
             // 
-            this.textBoxTesting.Location = new System.Drawing.Point(132, 4);
-            this.textBoxTesting.Multiline = true;
-            this.textBoxTesting.Name = "textBoxTesting";
-            this.textBoxTesting.Size = new System.Drawing.Size(262, 31);
-            this.textBoxTesting.TabIndex = 16;
+            this.Change_button.Location = new System.Drawing.Point(481, 56);
+            this.Change_button.Name = "Change_button";
+            this.Change_button.Size = new System.Drawing.Size(58, 26);
+            this.Change_button.TabIndex = 17;
+            this.Change_button.Text = "Change";
+            this.Change_button.UseVisualStyleBackColor = true;
+            this.Change_button.Click += new System.EventHandler(this.Change_button_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 409);
-            this.Controls.Add(this.textBoxTesting);
+            this.Controls.Add(this.Change_button);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -281,7 +285,7 @@
         private System.Windows.Forms.ContextMenuStrip ContextMenuStripPictureBox;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem удалитьToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBoxTesting;
+        private System.Windows.Forms.Button Change_button;
     }
 }
 
