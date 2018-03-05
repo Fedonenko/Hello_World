@@ -79,15 +79,7 @@ namespace Kursovaya_OOP
                             {
                                 _i = i;
                                 _j = j;
-                                //F.ContextMenuStripCircuitry = ContextMenuStripPictureBox;
-                                //Context_Menu(pictureBox1, ContextMenuStripPictureBox);
-
-                                //textBoxTesting.Text = pictureBox1.ContextMenuStrip.ToString();
-
-                                //ContextMenuStripPictureBox
                                 pictureBox1.ContextMenuStrip = ContextMenuStripPictureBox;
-                                //pictureBox1.Invalidate();
-                                //pictureBox1.ContextMenuStrip = null;
                             }
                             else return;
                 }
@@ -140,7 +132,6 @@ namespace Kursovaya_OOP
         }
         private void Turn_Figure_Click(object sender, EventArgs e)
         {
-            //if(F._figure)
             F._figure[_i][_j].Fi += 90;
             pictureBox1.Invalidate();
             //pictureBox1.p = null;
@@ -150,6 +141,15 @@ namespace Kursovaya_OOP
         private void Change_button_Click(object sender, EventArgs e)
         {
             if (F._figure[_i] == null || F._figure[_i][_j] == null) return;
+            try
+            {
+                F._figure[_i][_j].Amperage = Convert.ToDouble(textAmperage.Text);
+                F._figure[_i][_j].Capacitance = Convert.ToDouble(textCapacitance.Text);
+                F._figure[_i][_j].Resist = Convert.ToDouble(textResist.Text);
+                F._figure[_i][_j].Voltage = Convert.ToDouble(textVoltage.Text);
+            }
+            catch { }
+
 
         }
 
@@ -162,7 +162,6 @@ namespace Kursovaya_OOP
         private void Context_Menu(PictureBox pb, ContextMenuStrip cms)
         {
             pb.ContextMenuStrip = cms;
-            //pb.ContextMenuStrip.
         }
 
     }

@@ -27,3 +27,12 @@ E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovay
 E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.csproj.CoreCompileInputs.cache
 E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.exe
 E:\Hello_World_githab\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.pdb
+C:\Users\bubus\Desktop\github\Hello_World\Kursovaya_OOP\Kursovaya_OOP\bin\Debug\Kursovaya_OOP.exe.config
+C:\Users\bubus\Desktop\github\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.exe
+C:\Users\bubus\Desktop\github\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.pdb
+C:\Users\bubus\Desktop\github\Hello_World\Kursovaya_OOP\Kursovaya_OOP\bin\Debug\Kursovaya_OOP.exe
+C:\Users\bubus\Desktop\github\Hello_World\Kursovaya_OOP\Kursovaya_OOP\bin\Debug\Kursovaya_OOP.pdb
+C:\Users\bubus\Desktop\github\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.csprojResolveAssemblyReference.cache
+C:\Users\bubus\Desktop\github\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.Form1.resources
+C:\Users\bubus\Desktop\github\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.Properties.Resources.resources
+C:\Users\bubus\Desktop\github\Hello_World\Kursovaya_OOP\Kursovaya_OOP\obj\Debug\Kursovaya_OOP.csproj.GenerateResource.Cache
